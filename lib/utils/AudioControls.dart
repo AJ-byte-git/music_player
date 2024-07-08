@@ -16,19 +16,19 @@ class AudioControls extends StatelessWidget {
           final playing = playerState?.playing;
           if (!(playing ?? false)) {
             return IconButton(
-                iconSize: 80,
+                iconSize: 40,
                 color: Colors.white,
                 onPressed: audioPlayer.play,
                 icon: const Icon(Icons.play_arrow_sharp));
           } else if (processingState != ProcessingState.completed) {
             return IconButton(
-                iconSize: 80,
+                iconSize: 40,
                 color: Colors.white,
                 onPressed: audioPlayer.pause,
                 icon: const Icon(Icons.pause));
           }
           return IconButton(
-            iconSize: 80,
+            iconSize: 40,
             color: Colors.white,
             icon: const Icon(Icons.play_arrow),
             onPressed: audioPlayer.play,

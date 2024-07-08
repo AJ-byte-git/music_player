@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:just_audio_background/just_audio_background.dart';
-import 'package:music_player/UI/pages/TestPage.dart';
+import 'package:music_player/UI/pages/MainPage.dart';
 
 Future<void> main() async {
   await JustAudioBackground.init(
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: TestPage(),
+      home: MainPage(),
     );
   }
 }
